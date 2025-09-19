@@ -1,0 +1,130 @@
+.container {
+    display: flex;
+    justify-content: flex-end; /* pushes buttons to the right */
+    gap: 15px; /* space between buttons */
+    padding: 10px; /* optional padding */
+}
+
+.container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.container button:first-child {
+    background-color: #eee;   /* Login button */
+}
+
+.container button:last-child {
+    background-color: #007bff; /* Sign Up button */
+    color: white;
+}
+
+
+.emblem {
+    display: flex;
+    align-items: center;  /* keeps text vertically centered with image */
+    gap: 15px;            /* spacing between image and text */
+}
+
+.emblem img {
+    width: 180px;   /* increase size */
+    height: 180px;  /* set equal width & height for a perfect circle */
+    border-radius: 50%; /* makes the image round */
+    object-fit: cover;  /* ensures it doesn’t distort */
+}
+
+.emblem-text p {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: center;  /* centers all buttons */
+    align-items: center;
+    gap: 40px;                /* spacing between buttons */
+    padding: 16px 32px;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+/* Top-level navbar buttons */
+.dropbtn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #333;
+    padding: 8px 12px;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+/* Hover effect for top-level buttons */
+.dropbtn:hover {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+}
+
+/* Dropdown wrapper */
+.dropdown {
+    position: relative;
+}
+
+/* Dropdown menu (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;   /* show right below button */
+    left: 0;
+    background-color: white;
+    min-width: 220px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.15);
+    border-radius: 6px;
+    z-index: 1000;
+    padding: 6px 0;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: #007bff;
+}
+
+/* Show dropdown when hovering over parent */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.about-text {
+    margin: 40px auto;       /* centers the block itself */
+    max-width: 900px;        /* keeps text from being too wide */
+    line-height: 1.6;        /* improves readability */
+    font-family: Arial, sans-serif;
+}
+
+.about-text h2 {
+    text-align: center;      /* centers the heading */
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    text-align: justify;        /* ensures paragraph stays left-aligned */
+    font-size: 16px;
+}
