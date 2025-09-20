@@ -1,7 +1,7 @@
 .container {
     display: flex;
     justify-content: flex-end; /* pushes buttons to the right */
-    gap: 15px; /* space between buttons */
+    gap: 30px; /* space between buttons */
     padding: 10px; /* optional padding */
 }
 
@@ -14,11 +14,12 @@
 }
 
 .container button:first-child {
-    background-color: #eee;   /* Login button */
+    background-color: #0e811e;   /* Login button */
+    color: white;
 }
 
 .container button:last-child {
-    background-color: #007bff; /* Sign Up button */
+    background-color: #0e811e; /* Sign Up button */
     color: white;
 }
 
@@ -49,7 +50,7 @@
     align-items: center;
     gap: 40px;                /* spacing between buttons */
     padding: 16px 32px;
-    background-color: #f8f9fa;
+    background-color: #0e811e;
     font-family: Arial, sans-serif;
 }
 
@@ -60,15 +61,15 @@
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
-    color: #333;
+    color: white;
     padding: 8px 12px;
     transition: color 0.3s, border-bottom 0.3s;
 }
 
 /* Hover effect for top-level buttons */
 .dropbtn:hover {
-    color: #007bff;
-    border-bottom: 2px solid #007bff;
+    color:#313632;
+    border-bottom: 2px solid #ffffff;
 }
 
 /* Dropdown wrapper */
@@ -82,7 +83,7 @@
     position: absolute;
     top: 100%;   /* show right below button */
     left: 0;
-    background-color: white;
+    background-color: #0e811e;
     min-width: 220px;
     box-shadow: 0px 4px 6px rgba(0,0,0,0.15);
     border-radius: 6px;
@@ -96,14 +97,14 @@
     padding: 10px 15px;
     text-decoration: none;
     font-size: 15px;
-    color: #333;
+    color: #ffffff;
     transition: background 0.3s, color 0.3s;
 }
 
 /* Hover effect for dropdown links */
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
-    color: #007bff;
+    background-color: #333333;
+    color: #ffffff;
 }
 
 /* Show dropdown when hovering over parent */
