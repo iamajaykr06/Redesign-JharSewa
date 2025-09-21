@@ -35,8 +35,8 @@
 }
 
 .emblem img {
-    width: 180px;   /* increase size */
-    height: 180px;  /* set equal width & height for a perfect circle */
+    width: 182px;   /* increase size */
+    height: 182px;  /* set equal width & height for a perfect circle */
     border-radius: 50%; /* makes the image round */
     object-fit: cover;  /* ensures it doesn’t distort */
 }
@@ -89,7 +89,7 @@
     left: 0;
     background-color: #0e811e;
     min-width: 220px;
-    box-shadow: 0px 4px 6px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
     border-radius: 6px;
     z-index: 1000;
     padding: 6px 0;
@@ -132,4 +132,31 @@
 .about-text p {
     text-align: justify;        /* ensures paragraph stays left-aligned */
     font-size: 16px;
+}
+
+.page-footer{
+    background-color: #0e811e;
+    color: white;
+}
+
+.column{
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 300px;
+    box-sizing: border-box;
+}
+
+.row:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.rights{
+    padding: 20px 0;
+    background-color: #0e811e;
+    color: white;
+    text-align: center;
+    width: 100%;
 }
