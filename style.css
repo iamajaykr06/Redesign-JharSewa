@@ -2,7 +2,7 @@
     display: flex;
     justify-content: flex-end; /* pushes buttons to the right */
     gap: 30px; /* space between buttons */
-    padding: 10px; /* optional padding */
+    padding: 15px; /* optional padding */
 }
 
 .container button {
@@ -23,6 +23,10 @@
     color: white;
 }
 
+.container button:hover {
+    background-color: #333333;
+    color: white;
+}
 
 .emblem {
     display: flex;
