@@ -3,12 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Login Page</title>
-    <link rel = "icon" type = "image/png" href = "logo.png">
+    <link rel = "icon" type = "image/x-icon" href = "emblem.png">
     <link rel = "stylesheet" type = "text/css" href = "CSS/auth.css">
 
 </head>
 <body>
+<!-- Header -->
+<header class="page-header">
+    <div class="header-left">
+        <img src="emblem.png" alt="Logo" class="logo">
+    </div>
+    <div class="header-right">
+        <h2>JharSewa</h2>
+    </div>
+</header>
 
+<!-- Navigation -->
+<nav class="top-nav">
+    <a href="index.html">Home</a>
+    <a href="#signup" class="nav-btn btn-signup">Sign Up</a>
+    <a href="#login" class="nav-btn btn-login">Login</a>
+</nav>
 
      <div class="login-box" id="login">
 
@@ -21,7 +36,18 @@
                  Password: <label>
                  <input type="password" name="password" placeholder=" " required="">
              </label>
-                 <button>Login</button>
+                 <!-- Terms & Conditions -->
+                 <label class="terms">
+                     <input type="checkbox" name="terms" required>
+                     I agree to the <a href="#">Terms and Conditions</a>.
+                 </label>
+
+                 <!-- Login Button -->
+                 <button type="submit">Login</button>
+
+                 <!-- Forgot Password -->
+                 <p class="forgot-password"><a href="#">Forgot Password?</a></p>
+
              </form>
 
          </div>
@@ -41,7 +67,7 @@
                  <input type="email" name="email" placeholder=" " required="">
              </label>
                  Mobile Number: <label>
-                 <input type="number" name="Mobile Number" placeholder=" " required="">
+                 <input type="tel" name="Mobile Number" placeholder=" " required="">
              </label>
                  Password: <label>
                  <input type="password" name="password" placeholder=" " required="">
@@ -49,8 +75,14 @@
                  Confirm Password: <label>
                  <input type="password" name="password" placeholder=" " required="">
              </label>
+                 <!-- Terms & Conditions -->
+                 <label class="terms">
+                     <input type="checkbox" name="terms" required>
+                     I agree to the <a href="#">Terms and Conditions</a>.
+                 </label>
 
-                 <button>Sign Up</button>
+                 <!-- Sign Up Button -->
+                 <button type="submit">Sign Up</button>
              </form>
 
          </div>

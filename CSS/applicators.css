@@ -32,10 +32,10 @@ select {
 
 /* Hover and focus states */
 select:hover {
-    border-color: #6366f1;
+    border-color: #04AA6D;
 }
 
 select:focus {
-    border-color: #4f46e5;
+    border-color: #04AA6D;
     box-shadow: 0 0 0 3px rgba(79,70,229,0.2);
 }
