@@ -1,3 +1,20 @@
+.page-container {
+    display: flex;
+    justify-content: center;   /* centers h2 horizontally */
+    align-items: center;       /* centers h2 vertically */
+    background-color: #1E3A8A;
+    color: white;
+    height: 120px;             /* fixed height for a nice block */
+    margin-top: 130px;         /* push it below fixed header (adjust if header height changes) */
+    box-sizing: border-box;
+}
+
+.page-container h2 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 600;
+}
+
 /* FAQ Section */
 .general {
     max-width: 800px;

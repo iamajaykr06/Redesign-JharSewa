@@ -1,3 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #F8F9FA;
+}
+
 .container {
     display: flex;
     justify-content: space-between; /* image left, buttons right */
@@ -26,17 +34,17 @@
 }
 
 .buttons button:first-child {
-    background-color: #04AA6D; /* Login button */
+    background-color: #1E3A8A; /* Login button */
     color: white;
 }
 
 .buttons button:last-child {
-    background-color: #04AA6D; /* Sign Up button */
+    background-color: #1E3A8A; /* Sign Up button */
     color: white;
 }
 
 .buttons button:hover {
-    background-color: #04AA6D;
+    background-color: #3F51B5;
     color: white;
 }
 
@@ -61,7 +69,7 @@
     align-items: center;
     gap: 40px;                /* spacing between buttons */
     padding: 16px 32px;
-    background-color: #04AA6D;
+    background-color:#1E3A8A;
     font-family: Arial, sans-serif;
 }
 
@@ -77,10 +85,10 @@
     transition: color 0.3s, border-bottom 0.3s;
 }
 
-/* Hover effect for top-level buttons */
 .dropbtn:hover {
-    color:#313632;
-    border-bottom: 2px solid #ffffff;
+    color: #ffffff; /* keep text white */
+    background: rgba(255,255,255,0.08); /* subtle highlight instead of underline */
+    border-bottom: none; /* remove underline */
 }
 
 /* Dropdown wrapper */
@@ -94,7 +102,7 @@
     position: absolute;
     top: 100%;   /* show right below button */
     left: 0;
-    background-color: #04AA6D;
+    background-color:#1E3A8A;
     min-width: 220px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.15);
     border-radius: 6px;
@@ -114,8 +122,9 @@
 
 /* Hover effect for dropdown links */
 .dropdown-content a:hover {
-    background-color: #333333;
+    background-color: #3F51B5;
     color: #ffffff;
+    text-decoration: none;
 }
 
 /* Show dropdown when hovering over parent */
@@ -142,7 +151,7 @@
 }
 
 .page-footer{
-    background-color: #04AA6D;
+    background-color:#1E3A8A;
     color: white;
 }
 
@@ -162,8 +171,16 @@
 
 .rights{
     padding: 20px 0;
-    background-color: #04AA6D;
+    background-color:#1E3A8A;
     color: white;
     text-align: center;
     width: 100%;
+}
+
+/* Remove underline globally */
+a,
+a:hover,
+a:focus,
+a:visited {
+    text-decoration: none; /* no underline in any state */
 }
