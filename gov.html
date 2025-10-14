@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Jharkhand Government Portal</title>
-    <link type="text/css" rel="stylesheet" href="CSS/gov.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+     <link type="text/css" rel="stylesheet" href="CSS/gov.css">
 </head>
 <body>
      <!-- Header Section -->
 <header>
     <div class="logo">
 
-        <img src="emblem.png" alt="" class="logo-img">
+        <img src="/assets/emblem.png" alt="" class="logo-img">
         <div class="logo-text">
-        Jharkhand Government
-        <span>Digital Services Portal</span>
         </div>
+        <div class="logo-text"> Jharkhand Government
+            <span>Digital Services Portal</span>
+         </div>
     </div>
 
     <nav>
@@ -28,8 +31,8 @@
     </nav>
 
     <div class = "header-buttons">
-        <a href ="auth.html" class ="login-btn">Log In</a>
-        <a href="auth.html" class ="register-btn">Register</a>
+        <a href ="#" class ="login-btn">Log In</a>
+        <a href="#" class ="register-btn">Register</a>
     </div>
 </header>
 
@@ -81,7 +84,9 @@
         <!-- Property Registration -->
 
         <div class="service-card">
-
+             <div class="service-icon">
+                 <i class = "fa fa-home"></i>
+             </div>
             <h3>Property Registration</h3>
             <p>Register property transactions and obtain legal documentation online.</p>
             <div class ="service-meta">
@@ -96,7 +101,9 @@
         <!-- Pension Services -->
 
         <div class="service-card">
-
+            <div class="service-icon">
+                <i class = "fa fa-money-check-alt"></i>
+            </div>
             <h3>Pension Services</h3>
             <p>Apply for old age, widow, and disability pension schemes.</p>
             <div class ="service-meta">
@@ -111,7 +118,9 @@
         <!-- Scholarship Portal -->
 
         <div class="service-card">
-
+            <div class="service-icon">
+                <i class="fa fa-graduation-cap"></i>
+            </div>
             <h3>Scholarship Portal</h3>
             <p>Access various educational scholarships and financial aid.</p>
             <div class ="service-meta">
@@ -127,6 +136,9 @@
 
         <div class="service-card">
 
+            <div class="service-icon">
+                <i class = "fa fa-briefcase"></i>
+            </div>
             <h3>Employment Registration</h3>
             <p>Register for government job opportunities and skill development.</p>
             <div class ="service-meta">
@@ -141,6 +153,139 @@
 
 </div>
 
+
+<!-- Government Announcements -->
+
+<div class ="gov-announcement">
+    <h2>Government Announcements</h2>
+    <p>Stay updated with latest government initiatives and policy announcements.</p>
+
+    <div class ="gov-announcement-grid">
+
+        <!--Digital India Initiative Expansion -->
+
+        <div class ="gov-announcement-card">
+            <div class="gov-announcement-meta">
+                <span class ="announcement-type">Important</span>
+                <span class ="announcement-date">Jan 15, 2025</span>
+            </div>
+
+            <h3>Digital India Initiative Expansion</h3>
+            <p>New digital services launched to enhance citizen convenience and reduce processing times for government applications.</p>
+
+            <a href ="#" class ="read-more">Read more<i class ="fa fa-arrow-right"></i></a>
+        </div>
+
+        <!--Revised Pension Scheme Guidelines -->
+
+        <div class ="gov-announcement-card">
+            <div class="gov-announcement-meta">
+                <span class ="announcement-type">Policy Update</span>
+                <span class ="announcement-date">Jan 12, 2025</span>
+            </div>
+            <h3>Revised Pension Scheme Guidelines</h3>
+            <p>Update eligibility criteria and application process for state pension schemes to benefit more senior.</p>
+            <a href ="#" class ="read-more">Read more<i class ="fa fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Mobile App for Government Services -->
+
+        <div class ="gov-announcement-card">
+            <div class="gov-announcement-meta">
+                <span class ="announcement-type">Update</span>
+                <span class ="announcement-date">Jan 10, 2025</span>
+
+               </div>
+
+            <h3>Mobile App for Government Services </h3>
+            <p>Download the new JharSewa mobile application for convenient access to all government services on your smartphone.</p>
+            <a href ="#" class ="read-more">Read more<i class ="fa fa-arrow-right"></i></a>
+        </div>
+    </div>
+</div>
+
+     <!--Featured Government Schemes -->
+
+     <div class = "gov-scheme">
+         <h2>Featured Government Schemes</h2>
+         <p>Explore major government initiatives designed to support citizens across various sectors. </p>
+
+         <div class ="gov-scheme-grid">
+
+             <!-- Kisan Samman Nidhi -->
+
+             <div class ="gov-scheme-card">
+
+                 <h3>Kisan Samman Nidhi</h3>
+                 <p>Direct income support of ₹6,000 per year to small and marginal farmers across the state.</p>
+
+                 <div class ="gov-scheme-meta">
+                     <div>
+                         <span class="eligibility">Eligibility:</span>
+                         <span class="farmer-type">Small/Marginal</span>
+                     </div>
+
+                     <div>
+                         <span class="benefit">Benefit:</span>
+                         <span class="amount">₹6,000/year</span>
+                     </div>
+
+                 </div>
+
+                 <button class ="app-btn">Apply Now</button>
+
+             </div>
+
+             <!-- Pradhan Mantri Awas Yojana -->
+
+             <div class ="gov-scheme-card">
+
+                 <h3>Pradhan Mantri Awas Yojana</h3>
+                 <p> Housing Scheme providing financial assistance for construction of pucca houses for eligible families.</p>
+
+                 <div class ="gov-scheme-meta">
+                     <div>
+                         <span class="eligibility">Eligibility:</span>
+                         <span class="farmer-type">BPL Families</span>
+                     </div>
+
+                     <div>
+                         <span class="benefit">Benefit:</span>
+                         <span class="amount">₹1.2 Lakh</span>
+                     </div>
+
+                 </div>
+
+                 <button class ="app-btn">Apply Now</button>
+
+             </div>
+
+               <!-- Savitribai Phule Kishori Samridhi Yojana -->
+
+             <div class ="gov-scheme-card">
+                 <h3>Savitribai Phule Kishori Samridhi Yojana </h3>
+                 <p> Conditional cash transfer scheme for adolescent girls to promote education and health .</p>
+
+                 <div class ="gov-scheme-meta">
+                     <div>
+                         <span class="eligibility">Eligibility:</span>
+                         <span class="farmer-type">Girls 14-18 years</span>
+                     </div>
+
+                     <div>
+                         <span class="benefit">Benefit:</span>
+                         <span class="amount">₹2,500/year</span>
+                     </div>
+
+                 </div>
+
+                 <button class ="app-btn">Apply Now</button>
+
+             </div>
+         </div>
+     </div>
+
+<!-- -->
 
 </body>
 </html>

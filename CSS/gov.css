@@ -5,6 +5,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+}
 body{
     background-color: #f9f9f9;
     color: #111827;
@@ -87,7 +93,8 @@ nav a:hover{
 }
 
 .login-btn:hover{
-    background-color: #e6f4ee;
+    background-color: #008554;
+    color: #ffffff;
 }
 
 .register-btn{
@@ -96,13 +103,15 @@ nav a:hover{
 }
 
 .register-btn:hover{
-    background-color: #00704a;
+    border: 1px solid #008554;
+    background-color: #ffffff;
+    color: #008554;
 }
 
 /* Hero Section */
 
 .hero{
-    background-image: linear-gradient(rgba(0,133,84,0.85),rgba(0,133,84,0.9)), url('../vidhansabha.jpeg');
+    background-image: linear-gradient(rgba(0,133,84,0.85),rgba(0,133,84,0.9)), url('../assets/vidhansabha.jpeg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -157,16 +166,6 @@ nav a:hover{
     flex-wrap: wrap;
 }
 
-/* .hero-buttons a{
-    text-decoration: none;
-    padding: 12px 28px;
-    background-color: white;
-    color: #008554;
-    font-weight: 600;
-    border-radius: 8px;
-    transition: background-color 0.2s ease;
-}
-  */
 .explore-btn{
     text-decoration: none;
     padding: 12px 28px;
@@ -197,13 +196,17 @@ nav a:hover{
 
 }
 
+/* Quick Access Services */
+
 .quick-access-services{
+    background-color:  #ffffff;
+    text-align: center;
     padding: 20px;
     font-family: Arial, sans-serif;
 }
 
 .quick-access-services h2{
-    text-align: center;
+
     color: #333;
     font-weight:bold ;
     margin-top: 20px;
@@ -212,7 +215,7 @@ nav a:hover{
 }
 
 .quick-access-services p{
-    text-align: justify-all;
+
     font-size: 1rem;
     max-width: 700px;
     margin: 0 auto 40px auto;
@@ -223,14 +226,23 @@ nav a:hover{
 .service-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    gap: 25px;
 }
 
 .service-card{
     border: 1px solid  #ddd;
-    border-radius: 8px;
+    border-radius: 25px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     padding: 15px;
-    background-color: #f9f9f9;
+    background-color: white;
+     transition: transform 0.3s ease;
+}
+
+
+.service-icon{
+    font-size: 2.5rem;
+    color: #2e86c1;
+    margin-bottom: 15px;
 }
 
 .service-card h3{
@@ -246,14 +258,14 @@ nav a:hover{
 }
 
 .service-meta{
-    display: flex;
+    display:flex;
     gap: 10px;
+    justify-content: space-between;
     margin-bottom: 15px;
 }
 
 .sub-time,.fees{
     padding: 4px 8px;
-    justify-content: space-between;
     background-color: #e9ecef;
     border-radius: 5px;
     font-size: 0.8rem;
@@ -265,10 +277,139 @@ nav a:hover{
     color: #ffffff;
     border: none;
     padding: 8px 15px;
-    border-radius: 4px;
+    border-radius: 50px;
     font-size: 0.9rem;
+    width: 100%;
 }
 
 .app-btn:hover{
     background-color: #00704a;
+}
+
+/* Government announcements */
+
+.gov-announcement{
+    background-color: #f0f7fd;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+.gov-announcement h2{
+    color: #333;
+    font-weight:bold ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+.gov-announcement p{
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+}
+.gov-announcement-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.gov-announcement-card{
+    border: 1px solid  #ddd;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    padding: 15px;
+    border-left: 4px solid #008554;
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+
+.gov-announcement-card h3{
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.gov-announcement-card p{
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.gov-announcement-meta{
+    display:flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+
+.announcement-type,.announcement-date{
+    padding: 4px 8px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    color: #495057;
+}
+
+.read-more{
+    text-decoration: none;
+    color: #008554;
+}
+
+/* Featured Government Schemes */
+
+.gov-scheme{
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.gov-scheme h2{
+    color:#282e35;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    font-weight: bold;
+}
+
+.gov-scheme p{
+    color:#282e35;
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;;
+}
+
+.gov-scheme-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.gov-scheme-card{
+    border: 1px solid  #ddd;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    padding: 15px;
+    background-color: #f3f9f5;
+    transition: transform 0.3s ease;
+}
+
+.gov-scheme-meta{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-family: Arial, sans-serif;
+}
+
+.gov-scheme-meta > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.farmer-type,.amount{
+    font-weight: bold;
 }
