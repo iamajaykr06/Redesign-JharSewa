@@ -419,7 +419,7 @@ nav a:hover{
 .update-quick-links{
     display: flex;
     gap:20px;
-    margin-top: 80px;
+    margin-top: 40px;
 
 }
 
@@ -487,10 +487,12 @@ nav a:hover{
     color: #ffffff;
 
 }
-.department-quick-links{
+.department-quick-links-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .department-quick-links h2{
@@ -530,4 +532,80 @@ nav a:hover{
     color: #008554;
     border: none;
     font-size: 0.9rem;
+}
+
+.statistics{
+    background-color: white;
+}
+
+.statistics h2{
+    padding: 20px;
+    color: #2c3e50;
+    text-align: center;
+    font-weight: bold;
+}
+
+.statistics p{
+    color: #2c3e50;
+    font-size: 0.9rem;
+    text-align: center;
+}
+.statistics-grid{
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.statistics-card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 6rem;
+}
+
+.stats-time{
+    font-weight: bold;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+.stats-type{
+    padding:8px;
+    font-size: 0.8rem;
+    color: #495057;
+}
+
+.support-help-section{
+    background-color: #111827;
+}
+
+.support-help-section h2{
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.support-help-section p{
+    color:#ffffff;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.support-help-grid{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.support-card{
+    padding: 40px;
+    border: 2px solid white;
+    border-radius: 20px;
+    color:white;
+    backdrop-filter: blur(20px);
 }
